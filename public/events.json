@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Tech Summit 2023",
+    "image": "https://i.ibb.co.com/Jw2WXwvc/tech.jpg",
+    "description": "Join us for the premier annual technology conference where industry leaders, innovators, and entrepreneurs gather to discuss the latest advancements in AI, cloud computing, and cybersecurity. This three-day event features keynote speeches from top executives, hands-on workshops, and networking opportunities to help you stay ahead in the rapidly evolving tech landscape. Whether you're a startup founder or a CTO, this summit will provide actionable insights to drive your business forward.",
+    "status": "active",
+    "contactInfo": "events@techsummit.com | (555) 123-4567",
+    "division": "Technology"
+  },
+  {
+    "id": 2,
+    "title": "AI Innovation Conference",
+    "image": "https://i.ibb.co.com/1Y7YJF8j/istockphoto-2083917031-1024x1024.jpg",
+    "description": "Discover the future of artificial intelligence at this exclusive conference, where leading researchers and industry experts will share breakthroughs in machine learning, natural language processing, and ethical AI. Over two days, attendees will participate in panel discussions, live demos, and Q&A sessions with pioneers shaping the next generation of intelligent systems. Perfect for tech leaders, data scientists, and policymakers looking to harness AI's transformative potential.",
+    "status": "upcoming",
+    "contactInfo": "ai@innovationconf.net | (555) 890-1234",
+    "division": "Technology"
+  },
+  {
+    "id": 3,
+    "title": "Marketing Gala",
+    "image": "https://i.ibb.co.com/tPJct0tJ/market.jpg",
+    "description": "Celebrate creativity and strategy at the annual Marketing Gala, where top brands reveal their most successful campaigns of the year. This black-tie event includes award ceremonies, case study presentations, and talks from CMOs who have driven record engagement through digital, social, and experiential marketing. Network with peers while gaining inspiration to elevate your brand’s storytelling and customer connections.",
+    "status": "active",
+    "contactInfo": "info@marketinggala.org | (555) 234-5678",
+    "division": "Marketing"
+  },
+  {
+    "id": 4,
+    "title": "Digital Branding Workshop",
+    "image": "https://i.ibb.co.com/1GRpMrTt/tech1.jpg",
+    "description": "In this intensive two-day workshop, branding experts will guide you through the process of building a powerful digital identity in today’s competitive market. Learn how to craft compelling narratives, optimize visual consistency across platforms, and leverage data analytics to refine your brand’s voice. Interactive sessions include live critiques, collaborative exercises, and toolkits to implement strategies immediately.",
+    "status": "completed",
+    "contactInfo": "workshop@digitalbrand.com | (555) 345-6789",
+    "division": "Marketing"
+  },
+  {
+    "id": 5,
+    "title": "Finance Leaders Forum",
+    "image": "https://i.ibb.co.com/x8Y992DM/finance1.jpg",
+    "description": "Designed for CFOs, investment managers, and financial strategists, this invite-only forum addresses macroeconomic trends, risk management, and disruptive fintech innovations. Through fireside chats and roundtable discussions, attendees will explore how to navigate volatility, capitalize on emerging markets, and integrate sustainable finance practices. A rare opportunity to connect with global finance executives in a closed-door setting.",
+    "status": "upcoming",
+    "contactInfo": "contact@financeforum.com | (555) 456-7890",
+    "division": "Finance"
+  },
+  {
+    "id": 6,
+    "title": "Investment Strategies Symposium",
+    "image": "https://i.ibb.co.com/F4Mgc9Rf/finance.jpg",
+    "description": "This full-day symposium brings together hedge fund managers, venture capitalists, and private equity experts to debate high-yield strategies in a low-interest-rate environment. Sessions cover alternative assets, geopolitical impacts on portfolios, and algorithmic trading advancements. Attendees will leave with a refined toolkit for maximizing returns while mitigating risks in uncertain markets.",
+    "status": "active",
+    "contactInfo": "info@investsymposium.org | (555) 567-8901",
+    "division": "Finance"
+  },
+  {
+    "id": 7,
+    "title": "HR Innovators Conference",
+    "image": "https://i.ibb.co.com/fVsrHDxj/human1.jpg",
+    "description": "Transform your workplace culture at this forward-thinking HR conference, where talent leaders share proven strategies for employee engagement, diversity & inclusion, and hybrid work models. Highlights include keynote speeches from Fortune 500 CHROs, workshops on mental health support frameworks, and a hackathon to redesign performance evaluations. Ideal for HR professionals aiming to future-proof their organizations.",
+    "status": "active",
+    "contactInfo": "hr@innovatorsconf.net | (555) 678-9012",
+    "division": "Human Resources"
+  },
+  {
+    "id": 8,
+    "title": "Future of Work Summit",
+    "image": "https://i.ibb.co.com/bgpZcKdm/human.jpg",
+    "description": "As remote and gig economies reshape labor dynamics, this summit explores what’s next for workplaces worldwide. Topics include AI-driven recruitment, reskilling initiatives for automation, and legal frameworks for decentralized teams. Featuring case studies from companies that have successfully transitioned to four-day workweeks or metaverse offices, this event is a must for leaders reimagining productivity and employee satisfaction.",
+    "status": "upcoming",
+    "contactInfo": "contact@futurework.com | (555) 789-0123",
+    "division": "Human Resources"
+  },
+  {
+    "id": 9,
+    "title": "Healthcare Symposium",
+    "image": "https://i.ibb.co.com/B2NJ4Dkr/health.jpg",
+    "description": "Healthcare executives, clinicians, and policymakers will convene to tackle pressing challenges like cost transparency, telehealth scalability, and equitable access to care. The agenda includes deep dives into personalized medicine, hospital-at-home models, and regulatory updates. Attendees will gain practical insights to improve patient outcomes while streamlining operations in an era of rapid technological change.",
+    "status": "completed",
+    "contactInfo": "info@healthsym.org | (555) 890-1234",
+    "division": "Healthcare"
+  },
+  {
+    "id": 10,
+    "title": "Medical Tech Expo",
+    "image": "https://i.ibb.co.com/WvdVy8Xp/medical.jpg",
+    "description": "Explore groundbreaking innovations at the intersection of medicine and technology, from robotic surgery systems to AI diagnostics. This expo features live demos of wearable health monitors, VR-based therapy tools, and blockchain-secured patient records. Meet startups pitching disruptive solutions and hear from hospital CIOs about integrating these technologies into existing infrastructures without compromising care quality.",
+    "status": "active",
+    "contactInfo": "expo@medtech.org | (555) 901-2345",
+    "division": "Healthcare"
+  },
+  {
+    "id": 11,
+    "title": "Retail Leaders Convention",
+    "image": "https://i.ibb.co.com/MDfCtYsM/retail1.jpg",
+    "description": "Retail CEOs and omnichannel strategists will share how they’re adapting to shifting consumer behaviors, from social commerce to circular economy models. Panels will dissect supply chain resilience, hyper-personalization via AR/VR, and storefronts as experiential hubs. Walk away with blueprints for unifying online-offline experiences and leveraging data to predict the next big retail trend.",
+    "status": "active",
+    "contactInfo": "convention@retailleaders.org | (555) 012-3456",
+    "division": "Retail"
+  },
+  {
+    "id": 12,
+    "title": "E-Commerce Trends Forum",
+    "image": "https://i.ibb.co.com/SXZzVyZ8/retial2.jpg",
+    "description": "Dive into the future of online retail with sessions on checkout-less payments, AI-powered recommendation engines, and sustainability-driven consumer preferences. Speakers include founders of direct-to-consumer brands that scaled globally and logistics experts optimizing last-mile delivery. Whether you’re a marketplace seller or a platform developer, this forum will equip you with tactics to boost conversions and customer loyalty.",
+    "status": "upcoming",
+    "contactInfo": "forum@ecommercetrends.net | (555) 123-4506",
+    "division": "Retail"
+  }
+]
