@@ -1,15 +1,15 @@
 import React from "react";
 
-import Banner1 from "../assets/banner1.jpg";
-import Banner2 from "../assets/banner2.jpg";
-import Banner3 from "../assets/banner3.jpg";
-import Banner4 from "../assets/banner4.jpg";
+import banner1 from "../assets/banner/banner1.jpg";
+import banner2 from "../assets/banner/banner2.jpg";
+import banner3 from "../assets/banner/banner3.jpg";
+import banner4 from "../assets/banner/banner4.jpg";
 const Banner = () => {
   return (
     <div>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
-          <img src={Banner1} className="w-full h-[600px]" />
+          <img src={banner1} className="w-full h-[600px]" />
           <div className="hero-content left-1/4 top-1/2 flex justify-center -translate-y-1/2 absolute text-white">
             <div className="">
               <h1 className="text-5xl font-bold">Investment Strategies</h1>
@@ -19,7 +19,7 @@ const Banner = () => {
                 discuss the latest advancements in AI, cloud computing, and
                 cybersecurity.
               </p>
-              <button className="btn bg-purple-900 text-white border-0">
+              <button className="btn bg-purple-400 text-white border-0">
                 Book Now
               </button>
             </div>
@@ -34,7 +34,7 @@ const Banner = () => {
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <img src={Banner2} className="w-full h-[600px]" />
+          <img src={banner2} className="w-full h-[600px]" />
           <div className="hero-content left-1/4 top-1/2 flex justify-center -translate-y-1/2 absolute text-white">
             <div className="">
               <h1 className="text-5xl font-bold">Finance Leaders Forum</h1>
@@ -44,7 +44,7 @@ const Banner = () => {
                 discuss the latest advancements in AI, cloud computing, and
                 cybersecurity.
               </p>
-              <button className="btn bg-purple-900 text-white border-0">
+              <button className="btn bg-purple-400 text-white border-0">
                 Book Now
               </button>
             </div>
@@ -59,7 +59,7 @@ const Banner = () => {
           </div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
-          <img src={Banner3} className="w-full h-[600px]" />
+          <img src={banner3} className="w-full h-[600px]" />
           <div className="hero-content left-1/4 top-1/2 flex justify-center -translate-y-1/2 absolute text-white">
             <div className="">
               <h1 className="text-5xl font-bold">Digital Workshop</h1>
@@ -69,7 +69,7 @@ const Banner = () => {
                 discuss the latest advancements in AI, cloud computing, and
                 cybersecurity.
               </p>
-              <button className="btn bg-purple-900 text-white border-0">
+              <button className="btn bg-purple-400 text-white border-0">
                 Book Now
               </button>
             </div>
@@ -84,7 +84,7 @@ const Banner = () => {
           </div>
         </div>
         <div id="slide4" className="carousel-item relative w-full">
-          <img src={Banner4} className="w-full h-[600px]" />
+          <img src={banner4} className="w-full h-[600px]" />
           <div className="hero-content left-1/4 top-1/2 flex justify-center -translate-y-1/2 absolute text-white">
             <div className="">
               <h1 className="text-5xl font-bold">Tech Summit 2025</h1>
@@ -94,7 +94,7 @@ const Banner = () => {
                 discuss the latest advancements in AI, cloud computing, and
                 cybersecurity.
               </p>
-              <button className="btn bg-purple-900 text-white border-0">
+              <button className="btn bg-purple-400 text-white border-0">
                 Book Now
               </button>
             </div>

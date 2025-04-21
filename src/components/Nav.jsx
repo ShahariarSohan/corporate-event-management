@@ -6,7 +6,7 @@ const Nav = () => {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          isActive ? "font-medium text-purple-900" : "font-medium"
+          isActive ? "font-medium text-purple-400" : "font-medium"
         }
       >
         Home
@@ -14,7 +14,7 @@ const Nav = () => {
       <NavLink
         to="/events"
         className={({ isActive }) =>
-          isActive ? "font-medium text-purple-900" : "font-medium"
+          isActive ? "font-medium text-purple-400" : "font-medium"
         }
       >
         Events
@@ -22,7 +22,7 @@ const Nav = () => {
       <NavLink
         to="/dashboard"
         className={({ isActive }) =>
-          isActive ? " text-purple-900 font-medium" : "font-medium"
+          isActive ? " text-purple-400 font-medium" : "font-medium"
         }
       >
         Dashboard
@@ -30,7 +30,7 @@ const Nav = () => {
       <NavLink
         to="/contact"
         className={({ isActive }) =>
-          isActive ? "font-medium text-purple-900" : "font-medium"
+          isActive ? "font-medium text-purple-400" : "font-medium"
         }
       >
         Contact
@@ -76,7 +76,7 @@ const Nav = () => {
         <div>
           <img className="w-9 h-9 rounded-full" src="/user.png" alt="photo" />
         </div>
-        <Link to="/login" className="btn bg-purple-900 text-white">
+        <Link to="/login" className="btn bg-purple-400 text-white">
           Login
         </Link>
       </div>
