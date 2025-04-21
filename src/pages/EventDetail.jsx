@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const EventDetail = () => {
   const params = useParams();
@@ -15,7 +15,7 @@ const EventDetail = () => {
           <img
             src={image}
             alt=""
-            className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500"
+            className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500 rounded-md"
           />
           <h2 className="mb-1 text-2xl font-semibold">{title}</h2>
           <p className="text-sm dark:text-gray-600">{description}</p>
@@ -77,6 +77,15 @@ const EventDetail = () => {
               <span>283</span>
             </button>
           </div>
+        </div>
+        <div>
+          <Link
+            to="/events"
+            type="button"
+            className="flex items-center justify-center w-1/12 p-3 font-semibold  rounded-md bg-purple-400 text-white"
+          >
+            Events
+          </Link>
         </div>
       </div>
     </div>

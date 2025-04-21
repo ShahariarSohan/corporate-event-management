@@ -1,9 +1,13 @@
-import React from "react";
-import { useLoaderData } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import EventCard from "../components/EventCard";
 
 const Events = () => {
-  const events = useLoaderData();
+  const [events, setEvents] = useState([]);
+  useEffect(() => {
+    fetch("/public/events.json")
+      .then((res) => res.json())
+      .then((data) => setEvents(data));
+  }, []);
   return (
     <div>
       <h3 className="text-4xl text-center font-bold mt-10 mb-5">Our Events</h3>

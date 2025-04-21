@@ -22,12 +22,11 @@ const router = createBrowserRouter([
       {
         path: "/events",
         element: <Events></Events>,
-        loader: () => fetch("events.json"),
       },
       {
         path: "/events/:id",
         element: <EventDetail></EventDetail>,
-        loader: () => fetch("events.json"),
+        loader: () => fetch(`events.json`),
       },
       {
         path: "/dashboard",
