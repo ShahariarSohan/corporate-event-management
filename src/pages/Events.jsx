@@ -4,7 +4,7 @@ import EventCard from "../components/EventCard";
 const Events = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch("/public/events.json")
+    fetch("events.json")
       .then((res) => res.json())
       .then((data) => setEvents(data));
   }, []);
