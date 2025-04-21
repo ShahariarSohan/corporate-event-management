@@ -1,29 +1,73 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
+import toast from "react-hot-toast";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+
+    setEmailError("");
+    setPasswordError("");
+    if (!emailRegex.test(email)) {
+      return setEmailError("Email must ends with @gmail.com");
+    }
+    if (!passwordRegex.test(password)) {
+      return setPasswordError(
+        "Password should have an uppercase, a lower case and atleast 6 characters"
+      );
+    }
+    createUser(email, password)
+      .then(() => navigate("/"))
+      .catch((error) => toast.error(error.message));
+  };
   return (
     <div className="p-5">
       <h3 className="text-4xl text-center font-bold">Register</h3>
       <div className="card bg-base-100 w-full  mx-auto max-w-lg shrink-0 shadow-2xl my-10 ">
-        <form className="card-body">
+        <form onSubmit={handleRegister} className="card-body">
           <fieldset className="fieldset">
             <label className="label">Name</label>
-            <input type="text " className="input w-full" placeholder="Name" />
+            <input
+              name="name"
+              type="text "
+              className="input w-full"
+              placeholder="Name"
+            />
             <label className="label">PhotoURL</label>
             <input
+              name="photoURL"
               type="text "
               className="input w-full"
               placeholder="PhotoURL"
             />
             <label className="label">Email</label>
-            <input type="email " className="input w-full" placeholder="Email" />
+            <input
+              name="email"
+              type="email "
+              className="input w-full"
+              placeholder="Email"
+              required
+            />
+            <p className="text-sm text-red-600">{emailError}</p>
             <label className="label">Password</label>
             <input
+              name="password"
               type="password"
               className="input w-full"
               placeholder="Password"
+              required
             />
+            <p className="text-sm text-red-600">{passwordError}</p>
             <button className="btn bg-purple-400 text-white mt-4">
               Register
             </button>
