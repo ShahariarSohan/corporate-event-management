@@ -10,7 +10,7 @@ const Banner = () => {
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <img src={Banner1} className="w-full h-[600px]" />
-          <div className="hero-content top-1/2  translate-x-1/2 -translate-y-1/2 absolute text-white">
+          <div className="hero-content left-1/4 top-1/2 flex justify-center -translate-y-1/2 absolute text-white">
             <div className="">
               <h1 className="text-5xl font-bold">Investment Strategies</h1>
               <p className="py-6 max-w-md text-sm ">
@@ -35,7 +35,7 @@ const Banner = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img src={Banner2} className="w-full h-[600px]" />
-          <div className="hero-content top-1/2  translate-x-1/2 -translate-y-1/2 absolute text-white">
+          <div className="hero-content left-1/4 top-1/2 flex justify-center -translate-y-1/2 absolute text-white">
             <div className="">
               <h1 className="text-5xl font-bold">Finance Leaders Forum</h1>
               <p className="py-6 max-w-md text-sm ">
@@ -60,7 +60,7 @@ const Banner = () => {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img src={Banner3} className="w-full h-[600px]" />
-          <div className="hero-content top-1/2  translate-x-1/2 -translate-y-1/2 absolute text-white">
+          <div className="hero-content left-1/4 top-1/2 flex justify-center -translate-y-1/2 absolute text-white">
             <div className="">
               <h1 className="text-5xl font-bold">Digital Workshop</h1>
               <p className="py-6 max-w-md text-sm ">
@@ -85,7 +85,7 @@ const Banner = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <img src={Banner4} className="w-full h-[600px]" />
-          <div className="hero-content top-1/2  translate-x-1/2 -translate-y-1/2 absolute text-white">
+          <div className="hero-content left-1/4 top-1/2 flex justify-center -translate-y-1/2 absolute text-white">
             <div className="">
               <h1 className="text-5xl font-bold">Tech Summit 2025</h1>
               <p className="py-6 max-w-md text-sm ">
