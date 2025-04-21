@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer  sm:footer-horizontal bg-purple-400  p-10">
+    <footer className="footer justify-evenly sm:footer-horizontal bg-purple-400 p-10 ">
       <aside>
         <div>
           <img className="w-16 h-16" src="/logo.png" alt="" />
@@ -17,6 +17,13 @@ const Footer = () => {
           Copyright © {new Date().getFullYear()} - All right reserved
         </p>
       </aside>
+      <nav>
+        <h6 className="footer-title">Services</h6>
+        <a className="link link-hover">Branding</a>
+        <a className="link link-hover">Design</a>
+        <a className="link link-hover">Marketing</a>
+        <a className="link link-hover">Advertisement</a>
+      </nav>
       <nav>
         <h6 className="footer-title">Social</h6>
         <div className="grid grid-flow-col gap-4">
