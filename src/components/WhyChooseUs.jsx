@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
               Digital event organizers can reach a global audience, eliminating
               geographical barriers and enabling wider participation. Digital
               event organizers can reach a global audience, eliminating
-              geographical barriers and enabling wider participation. .
+              geographical barriers and enabling wider participation.
             </p>
           </div>
         </div>
