@@ -16,25 +16,25 @@ const HowWeWorks = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 lg:p-10 ">
-        <div className="flex flex-col justify-start p-5 bg-purple-400 rounded-md">
+        <div className="flex flex-col justify-start p-5 bg-purple-400 rounded-md space-y-3">
           <img className="w-10 h-10" src={concept} alt="" />
           <h3 className="font-bold">Concept</h3>
-          <p>Halal Events are popular for their mind blowing unique concept</p>
+          <p>Halal Events are popular for their mind blowing unique concept.</p>
         </div>
-        <div className="flex flex-col justify-start p-5 bg-purple-400 rounded-md">
+        <div className="flex flex-col justify-start p-5 bg-purple-400 rounded-md space-y-3">
           <img className="w-10 h-10" src={vision} alt="" />
           <h3 className="font-bold">Visions</h3>
-          <p>Halal Events are popular for their mind blowing unique visions</p>
+          <p>Halal Events are popular for their mind blowing unique visions.</p>
         </div>
-        <div className="flex flex-col justify-start p-5 bg-purple-400 rounded-md">
+        <div className="flex flex-col justify-start p-5 bg-purple-400 rounded-md space-y-3">
           <img className="w-10 h-10" src={design} alt="" />
           <h3 className="font-bold">Design</h3>
-          <p>Halal Events are popular for their mind blowing unique designs</p>
+          <p>Halal Events are popular for their mind blowing unique designs.</p>
         </div>
-        <div className="flex flex-col justify-start p-5 bg-purple-400 rounded-md">
+        <div className="flex flex-col justify-start p-5 bg-purple-400 rounded-md space-y-3">
           <img className="w-10 h-10" src={budget} alt="" />
           <h3 className="font-bold">Budget</h3>
-          <p>Halal Events are popular for their mind blowing unique budgets</p>
+          <p>Halal Events are popular for their mind blowing unique budgets.</p>
         </div>
       </div>
     </div>
