@@ -82,7 +82,7 @@ const EventDetail = () => {
           <Link
             to="/events"
             type="button"
-            className="flex items-center justify-center w-1/12 p-3 font-semibold  rounded-md bg-purple-400 text-white"
+            className="flex items-center justify-center w-[200px] p-3 font-semibold  rounded-md bg-purple-400 text-white"
           >
             Events
           </Link>

@@ -27,8 +27,12 @@ const Register = () => {
       );
     }
     createUser(email, password)
-      .then(() => navigate("/"))
-      .catch((error) => toast.error(error.message));
+      .then(() => {
+        e.target.reset();
+        toast.success("Registration Successful");
+        navigate("/");
+      })
+      .catch(() => toast.error("User Registration Failed"));
   };
   return (
     <div className="p-5">

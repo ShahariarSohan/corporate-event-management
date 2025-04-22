@@ -1,6 +1,10 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
+import toast from "react-hot-toast";
 const Nav = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
   const links = (
     <div className="flex flex-col gap-3 lg:flex-row lg:gap-5">
       <NavLink
@@ -37,6 +41,14 @@ const Nav = () => {
       </NavLink>
     </div>
   );
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        toast.success("LogOut Successfully");
+        navigate("/");
+      })
+      .catch();
+  };
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -74,11 +86,24 @@ const Nav = () => {
       </div>
       <div className="navbar-end gap-5">
         <div>
-          <img className="w-9 h-9 rounded-full" src="/user.png" alt="photo" />
+          <img
+            className="w-9 h-9 rounded-full"
+            src={user?.photoURL ? user.photoURL : "/user.png"}
+            alt="photo"
+          />
         </div>
-        <Link to="/login" className="btn bg-purple-400 text-white">
-          Login
-        </Link>
+        {user ? (
+          <button
+            onClick={handleLogOut}
+            className="btn bg-purple-400 text-white"
+          >
+            LogOut
+          </button>
+        ) : (
+          <Link to="/login" className="btn bg-purple-400 text-white">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );

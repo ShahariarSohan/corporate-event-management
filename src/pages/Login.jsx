@@ -1,17 +1,44 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
+import toast from "react-hot-toast";
 
 const Login = () => {
+  const { logIn, googleLogin } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    logIn(email, password)
+      .then(() => {
+        e.target.reset();
+        navigate("/");
+      })
+      .catch(() => toast.error("User Login Failed"));
+  };
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then(() => navigate("/"))
+      .catch();
+  };
   return (
     <div className="p-5">
       <h3 className="text-4xl text-center font-bold">Login</h3>
       <div className="card bg-base-100 w-full  mx-auto max-w-lg shrink-0 shadow-2xl my-10 ">
-        <form className="card-body">
+        <form onSubmit={handleLogin} className="card-body">
           <fieldset className="fieldset">
             <label className="label">Email</label>
-            <input type="email " className="input w-full" placeholder="Email" />
+            <input
+              name="email"
+              type="email "
+              className="input w-full"
+              placeholder="Email"
+            />
             <label className="label">Password</label>
             <input
+              name="password"
               type="password"
               className="input w-full"
               placeholder="Password"
@@ -31,7 +58,10 @@ const Login = () => {
           </Link>
         </p>
         <div className="my-2 flex justify-center">
-          <button className="btn border-0 bg-white text-black w-1/2 mx-auto">
+          <button
+            onClick={handleGoogleLogin}
+            className="btn border-0 bg-white text-black w-1/2 mx-auto"
+          >
             <svg
               aria-label="Google logo"
               width="16"
