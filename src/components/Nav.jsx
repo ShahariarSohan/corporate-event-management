@@ -23,14 +23,18 @@ const Nav = () => {
       >
         Events
       </NavLink>
-      <NavLink
-        to="/dashboard"
-        className={({ isActive }) =>
-          isActive ? " text-purple-400 font-medium" : "font-medium"
-        }
-      >
-        Dashboard
-      </NavLink>
+      {user ? (
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            isActive ? " text-purple-400 font-medium" : "font-medium"
+          }
+        >
+          Dashboard
+        </NavLink>
+      ) : (
+        ""
+      )}
       <NavLink
         to="/contact"
         className={({ isActive }) =>

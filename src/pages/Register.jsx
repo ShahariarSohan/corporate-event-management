@@ -4,7 +4,7 @@ import { AuthContext } from "../providers/AuthProvider";
 import toast from "react-hot-toast";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, googleLogin } = useContext(AuthContext);
   const navigate = useNavigate();
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
@@ -33,6 +33,11 @@ const Register = () => {
         navigate("/");
       })
       .catch(() => toast.error("User Registration Failed"));
+  };
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then(() => navigate("/"))
+      .catch();
   };
   return (
     <div className="p-5">
@@ -84,7 +89,10 @@ const Register = () => {
           </Link>
         </p>
         <div className="my-2 flex justify-center">
-          <button className="btn border-0 bg-white text-black w-1/2 mx-auto">
+          <button
+            onClick={handleGoogleLogin}
+            className="btn border-0 bg-white text-black w-1/2 mx-auto"
+          >
             <svg
               aria-label="Google logo"
               width="16"

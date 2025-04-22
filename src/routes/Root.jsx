@@ -8,6 +8,7 @@ import Dashboard from "../pages/Dashboard";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import PrivateRoute from "../privateRoutes/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -25,12 +26,20 @@ const router = createBrowserRouter([
       },
       {
         path: "/events/:id",
-        element: <EventDetail></EventDetail>,
+        element: (
+          <PrivateRoute>
+            <EventDetail></EventDetail>
+          </PrivateRoute>
+        ),
         loader: () => fetch(`events.json`),
       },
       {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>,
+        element: (
+          <PrivateRoute>
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/contact",
