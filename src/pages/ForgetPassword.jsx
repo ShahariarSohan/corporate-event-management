@@ -7,7 +7,6 @@ const ForgetPassword = () => {
   const handleResetPassword = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
-    console.log(email);
     sendPasswordResetEmail(auth, email)
       .then(() => {
         toast.success("Password reset email sent");
