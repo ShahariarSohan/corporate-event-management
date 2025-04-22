@@ -75,7 +75,7 @@ const Contact = () => {
               className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"
             ></textarea>
           </label>
-          <button className="btn bg-purple-400 text-white mt-4">Login</button>
+          <button className="btn bg-purple-400 text-white mt-4">Submit</button>
         </form>
       </div>
     </section>
